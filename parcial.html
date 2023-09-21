@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer parcial</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.4.0/math.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <div>
+        <h1>punto 1</h1>
+        <label class="label"> ingrese una frase </label>
+        <input type="text" id="frase_mayus" maxlength="10" minlength="3" onblur="primerPunto()">
+        
+    </div>
+    <div>
+        <h2>punto 2</h2>
+        <input type="date" name="" id="fechaNacimiento" min="1900-01-01" max="2023-12-31">
+        <br>
+        <button onclick="segundoPunto()">Calcular Edad</button>
+        <div id="resultado"></div>
+    </div>
+
+    <div>
+        <h3>punto 3</h3>
+        <label for="">ingrese un valor para reemplazar en la funcion</label>
+        <br>
+        <input type="number" id="valor_fx" placeholder="numero de preferencia">
+        <br>
+        <button onclick="tercerPunto()">clic para reemplazar en la funcion</button>
+        <br>
+        <div class="card">
+            <div class="card-body" id="resultado_funcion">
+              aqui se muestra el resultado de la funcion
+            </div>
+          </div>
+    </div>
+
+    <div>
+        <h4>punto 4</h4>
+        <label for=""> ingrese los valores para el tamano de la matriz </label>
+        <br>
+        <input type="number" placeholder="filas" id="numFilas">
+        <input type="number" placeholder="columnas" id="numColumnas">
+        <br>
+        <button onclick="cuartoPunto()">Generar Matriz</button>
+        
+        <div id="mb">
+            <h3>matriz base</h3>
+        </div>
+
+
+        <div id="matriz_trans">
+            <h3>transpuesta</h3>
+            <button onclick="mostrar_transpuesta()">MT</button>
+
+        </div>
+
+        <div id = "matriz_inv">
+            <h3>inversa</h3>
+            <button onclick="mostrar_inversa()">MI</button>
+        </div>
+
+
+    </div>
+    <script src = "funciones.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
